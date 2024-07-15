@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sveltekit-app
+    env: node
+    plan: free
+    buildCommand: bun run build
+    startCommand: bun run start
+    envVars:
+      - key: NODE_VERSION
+        value: 18
